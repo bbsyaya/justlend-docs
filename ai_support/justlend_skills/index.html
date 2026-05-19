@@ -1,0 +1,2156 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://bbsyaya.github.io/justlend-docs/ai_support/justlend_skills/">
+      
+      
+        <link rel="prev" href="../mcp_server/">
+      
+      
+        <link rel="next" href="../../resources/community/links/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
+    
+    
+      
+        <title>JustLend Skills - JustLend DAO Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/hide_elements.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#justlend-skills" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="JustLend DAO Documentation" class="md-header__button md-logo" aria-label="JustLend DAO Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JustLend DAO Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              JustLend Skills
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="JustLend DAO Documentation" class="md-nav__button md-logo" aria-label="JustLend DAO Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    JustLend DAO Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    GETTING STARTED
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            GETTING STARTED
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Concepts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/concepts/supply/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supply
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/concepts/borrow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Borrow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/concepts/withdraw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Withdraw
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/concepts/repay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repay
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/concepts/liquidations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Liquidations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/concepts/risks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/concepts/staked_trx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staked TRX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/concepts/energy_rental/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Energy Rental
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://justlend.org/docs/justlend_whitepaper_en.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Whitepaper
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    FAQs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            FAQs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/faqs/wallet_connection_questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wallet Connection Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/faqs/spending_cap_issue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spending Cap Issue During Transactions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.justlend.org/hc/en-us/sections/360011389611-Questions" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    GOVERNANCE
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            GOVERNANCE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance/jips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JIPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance/tokenomics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tokenomics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://forum.justlend.org" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Community Forum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    DEVELOPERS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DEVELOPERS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/contracts_overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contracts Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Supply and Borrow Market
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Supply and Borrow Market
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/supply_and_borrow_market/sbm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SBM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/supply_and_borrow_market/interest_rate_model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interest Rate Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/supply_and_borrow_market/governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/supply_and_borrow_market/price_oracle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Price Oracle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/supply_and_borrow_market/comptroller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comptroller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/staked_trx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staked TRX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/energy_rental/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Energy Rental
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/deployed_contracts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployed Contracts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/apis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APIs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    AI SUPPORT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            AI SUPPORT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mcp_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MCP Server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    JustLend Skills
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    JustLend Skills
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item has-children">
+  <a href="#overview" class="md-nav__link" onclick="toggleChildren(event)" aria-expanded="false">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview" hidden>
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item ">
+  <a href="#key-capabilities" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Key Capabilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#skill-modules" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Skill Modules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item ">
+  <a href="#supported-markets" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Supported Markets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item ">
+  <a href="#prerequisites" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item ">
+  <a href="#installation" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item has-children">
+  <a href="#configuration" class="md-nav__link" onclick="toggleChildren(event)" aria-expanded="false">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration" hidden>
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item ">
+  <a href="#client-configuration" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Client Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item has-children">
+  <a href="#usage" class="md-nav__link" onclick="toggleChildren(event)" aria-expanded="false">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage" hidden>
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item ">
+  <a href="#mcp-server-mode" class="md-nav__link" >
+    <span class="md-ellipsis">
+      MCP Server Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#cli-tool-mode" class="md-nav__link" >
+    <span class="md-ellipsis">
+      CLI Tool Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item has-children">
+  <a href="#skills-reference" class="md-nav__link" onclick="toggleChildren(event)" aria-expanded="false">
+    <span class="md-ellipsis">
+      Skills Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Skills Reference" hidden>
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item ">
+  <a href="#justlend-lending-justlend-lending-v1" class="md-nav__link" >
+    <span class="md-ellipsis">
+      JustLend Lending (justlend-lending-v1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#strx-staking-justlend-trx-staking" class="md-nav__link" >
+    <span class="md-ellipsis">
+      sTRX Staking (justlend-trx-staking)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#energy-rental-justlend-energy-rental" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Energy Rental (justlend-energy-rental)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#dao-governance-justlend-governance-v1" class="md-nav__link" >
+    <span class="md-ellipsis">
+      DAO Governance (justlend-governance-v1)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item has-children">
+  <a href="#mcp-tools-reference" class="md-nav__link" onclick="toggleChildren(event)" aria-expanded="false">
+    <span class="md-ellipsis">
+      MCP Tools Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MCP Tools Reference" hidden>
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item ">
+  <a href="#tools-9-total-all-read-only" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Tools (9 total, all read-only)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item ">
+  <a href="#security" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item ">
+  <a href="#example-conversations" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Example Conversations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item has-children">
+  <a href="#troubleshooting" class="md-nav__link" onclick="toggleChildren(event)" aria-expanded="false">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting" hidden>
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item ">
+  <a href="#trongrid-api-errors" class="md-nav__link" >
+    <span class="md-ellipsis">
+      TronGrid API Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#invalid-address" class="md-nav__link" >
+    <span class="md-ellipsis">
+      Invalid Address
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    RESOURCES
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            RESOURCES
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Community
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/community/links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/community/wallet_integration_cooperation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wallet Integration Cooperation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/risk_warning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Warning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Audits
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Audits
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://justlend.org/docs/justlend_audit_en.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supply & Borrow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://justlend.org/docs/justlend_strx_audit_en.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staked TRX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Terms of Service
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Terms of Service
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://justlend.org/docs/JustLend_Terms_of_Use_en.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terms of Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://justlend.org/docs/JustLend_Privacy_Policy_en.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="justlend-skills">JustLend Skills<a class="headerlink" href="#justlend-skills" title="Permanent link">&para;</a></h1>
+<p><strong>GitHub</strong>: <a href="https://github.com/justlend/justlend-skills">https://github.com/justlend/justlend-skills</a></p>
+<p>JustLend Skills (<code>@justlend/justlend-skills</code>) is an AI Agent skills package for the <strong>JustLend DAO</strong> protocol on TRON. It provides structured skill instructions and a lightweight <strong>read-only</strong> <a href="https://modelcontextprotocol.io/">MCP server</a> (9 query tools) that enables AI agents (Claude Code, Claude Desktop, Cursor, Codex, etc.) to query market data, monitor account positions, and analyze DeFi lending information.</p>
+<p>It also works as a standalone <strong>CLI tool</strong> for quick market checks directly from the terminal.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a <strong>read-only</strong> query package. No write operations or transaction signing are supported. For write operations (supply, borrow, repay, withdraw, sTRX staking, energy rental, governance voting), use the full MCP server: <a href="../mcp_server/">@justlend/mcp-server-justlend</a>.</p>
+</div>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><a href="https://justlend.org">JustLend DAO</a> is the largest lending protocol on TRON, based on the Compound V2 architecture. JustLend Skills wraps the core query functionality into MCP tools and structured skill instructions that AI agents can use.</p>
+<h3 id="key-capabilities">Key Capabilities<a class="headerlink" href="#key-capabilities" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Market Data</strong>: Real-time APYs (including mining rewards), TVL, utilization rates for all markets</li>
+<li><strong>Protocol Dashboard</strong>: Total supply, borrow volume, TVL, and user count across the protocol</li>
+<li><strong>Account Analysis</strong>: Health factor monitoring, liquidation risk assessment, balance queries</li>
+<li><strong>Token Balances</strong>: Query native TRX and TRC20 token balances (USDT, USDD, USDC, BTC, ETH, SUN, WIN, etc.)</li>
+<li><strong>Token Allowances</strong>: Check TRC20 approval status for JustLend contracts</li>
+</ul>
+<h3 id="skill-modules">Skill Modules<a class="headerlink" href="#skill-modules" title="Permanent link">&para;</a></h3>
+<p>The project includes 4 structured skill modules in the <code>/skills</code> directory that provide AI agents with domain-specific instructions and workflows:</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+<th>MCP Server Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>justlend-lending-v1</strong></td>
+<td>Market queries, account analysis, health factor monitoring</td>
+<td>JustLend Skills (built-in)</td>
+</tr>
+<tr>
+<td><strong>justlend-trx-staking</strong></td>
+<td>Stake TRX for sTRX liquid staking tokens</td>
+<td>Full MCP Server</td>
+</tr>
+<tr>
+<td><strong>justlend-energy-rental</strong></td>
+<td>Rent TRON Energy at discounted rates (50-80% cheaper)</td>
+<td>Full MCP Server</td>
+</tr>
+<tr>
+<td><strong>justlend-governance-v1</strong></td>
+<td>View proposals, deposit JST for voting power, cast votes</td>
+<td>Full MCP Server</td>
+</tr>
+</tbody>
+</table>
+<p>The lending skill works with the built-in 9 query tools. The other three skills provide instructional guidance and require the <a href="../mcp_server/">full MCP server</a> for write operations.</p>
+<h2 id="supported-markets">Supported Markets<a class="headerlink" href="#supported-markets" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>jToken</th>
+<th>Underlying</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jTRX</td>
+<td>TRX</td>
+<td>Native TRON token</td>
+</tr>
+<tr>
+<td>jUSDT</td>
+<td>USDT</td>
+<td>Tether USD</td>
+</tr>
+<tr>
+<td>jUSDD</td>
+<td>USDD</td>
+<td>Decentralized USD</td>
+</tr>
+<tr>
+<td>jUSDC</td>
+<td>USDC</td>
+<td>USD Coin</td>
+</tr>
+<tr>
+<td>jBTC</td>
+<td>BTC</td>
+<td>Bitcoin (TRC20)</td>
+</tr>
+<tr>
+<td>jETH</td>
+<td>ETH</td>
+<td>Ethereum (TRC20)</td>
+</tr>
+<tr>
+<td>jSUN</td>
+<td>SUN</td>
+<td>SUN Token</td>
+</tr>
+<tr>
+<td>jWIN</td>
+<td>WIN</td>
+<td>WINkLink</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The full MCP server supports 24+ markets including jsTRX, jwstUSDT, jWBTC, and more.</p>
+</div>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://nodejs.org/">Node.js</a> 20.0.0 or higher</li>
+<li><a href="https://www.trongrid.io/">TronGrid API key</a> (required)</li>
+</ul>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/justlend/justlend-skills.git
+<span class="nb">cd</span><span class="w"> </span>justlend-skills
+bash<span class="w"> </span>install.sh
+</code></pre></div>
+<p>Or manually:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install
+</code></pre></div>
+<p>The <code>install.sh</code> script will create <code>.env</code> and prompt for your TronGrid API key.</p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p>Create a <code>.env</code> file (or use <code>install.sh</code>):</p>
+<div class="highlight"><pre><span></span><code># Required — get from https://www.trongrid.io/
+TRONGRID_API_KEY=your_trongrid_api_key
+
+# Network: mainnet (default) or nile (testnet)
+NETWORK=mainnet
+</code></pre></div>
+<h3 id="client-configuration">Client Configuration<a class="headerlink" href="#client-configuration" title="Permanent link">&para;</a></h3>
+<h4 id="claude-desktop">Claude Desktop<a class="headerlink" href="#claude-desktop" title="Permanent link">&para;</a></h4>
+<p>Edit <code>~/Library/Application Support/Claude/claude_desktop_config.json</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;justlend&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/ABSOLUTE_PATH_TO/justlend-skills/scripts/mcp_server.mjs&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;TRONGRID_API_KEY&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your_key&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="cursor">Cursor<a class="headerlink" href="#cursor" title="Permanent link">&para;</a></h4>
+<p>Add to <code>.cursor/mcp.json</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;justlend&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/ABSOLUTE_PATH_TO/justlend-skills/scripts/mcp_server.mjs&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;TRONGRID_API_KEY&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your_key&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="claude-code">Claude Code<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h4>
+<p>Add to <code>.claude/settings.local.json</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;justlend&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/ABSOLUTE_PATH_TO/justlend-skills/scripts/mcp_server.mjs&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;TRONGRID_API_KEY&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your_key&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="codex-cli">Codex CLI<a class="headerlink" href="#codex-cli" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/justlend/justlend-skills<span class="w"> </span>~/.codex/justlend-skills
+<span class="nb">cd</span><span class="w"> </span>~/.codex/justlend-skills<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>bash<span class="w"> </span>install.sh
+mkdir<span class="w"> </span>-p<span class="w"> </span>~/.agents/skills
+ln<span class="w"> </span>-s<span class="w"> </span>~/.codex/justlend-skills/skills<span class="w"> </span>~/.agents/skills/justlend-skills
+</code></pre></div>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="mcp-server-mode">MCP Server Mode<a class="headerlink" href="#mcp-server-mode" title="Permanent link">&para;</a></h3>
+<p>For AI agent integrations (Claude Desktop, Cursor, Claude Code, etc.):</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>start
+</code></pre></div>
+<p>The server communicates over stdio and exposes 9 read-only MCP tools.</p>
+<h3 id="cli-tool-mode">CLI Tool Mode<a class="headerlink" href="#cli-tool-mode" title="Permanent link">&para;</a></h3>
+<p>For quick checks directly from the terminal:</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>markets<span class="w">              </span><span class="c1"># List all markets with APY</span>
+node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>dashboard<span class="w">            </span><span class="c1"># Protocol dashboard (TVL, users)</span>
+node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>supported-markets<span class="w">    </span><span class="c1"># List supported markets &amp; addresses</span>
+node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>balance<span class="w"> </span>&lt;addr&gt;<span class="w">       </span><span class="c1"># Check TRX balance</span>
+node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>balance<span class="w"> </span>&lt;addr&gt;<span class="w"> </span>USDT<span class="w">  </span><span class="c1"># Check token balance</span>
+node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>account<span class="w"> </span>&lt;addr&gt;<span class="w">       </span><span class="c1"># Account health status</span>
+node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>account-api<span class="w"> </span>&lt;addr&gt;<span class="w">   </span><span class="c1"># Full account data from API</span>
+node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>jtoken-details<span class="w"> </span>&lt;jtoken&gt;<span class="w">  </span><span class="c1"># Detailed jToken info</span>
+node<span class="w"> </span>scripts/justlend_api.mjs<span class="w"> </span>allowance<span class="w"> </span>&lt;addr&gt;<span class="w"> </span>USDT<span class="w">    </span><span class="c1"># Check TRC20 approval</span>
+</code></pre></div>
+<h2 id="skills-reference">Skills Reference<a class="headerlink" href="#skills-reference" title="Permanent link">&para;</a></h2>
+<h3 id="justlend-lending-justlend-lending-v1">JustLend Lending (justlend-lending-v1)<a class="headerlink" href="#justlend-lending-justlend-lending-v1" title="Permanent link">&para;</a></h3>
+<p>Core lending skill providing market queries, account analysis, and health factor monitoring workflows.</p>
+<p><strong>Workflow Rules:</strong></p>
+<ol>
+<li><strong>Always check before advising</strong> — use <code>get_all_markets</code> for APYs, <code>get_account_summary</code> for health factor, and <code>get_trx_balance</code> / <code>get_token_balance</code> to verify balances</li>
+<li><strong>TRC20 approval awareness</strong> — use <code>check_allowance</code> to check approval status before recommending supply or repay operations</li>
+<li><strong>Risk assessment</strong> — call <code>get_account_summary</code> to evaluate liquidation risk; warn if <code>shortfallUSD &gt; 0</code></li>
+</ol>
+<h3 id="strx-staking-justlend-trx-staking">sTRX Staking (justlend-trx-staking)<a class="headerlink" href="#strx-staking-justlend-trx-staking" title="Permanent link">&para;</a></h3>
+<p>Liquid staking skill for TRX. Stake TRX to receive sTRX tokens that earn staking rewards automatically while remaining usable in DeFi.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This skill requires the <a href="../mcp_server/">full MCP server</a> for tool execution.</p>
+</div>
+<p><strong>How it works:</strong> Deposit TRX → receive sTRX → rewards accrue via exchange rate appreciation → unstake with ~14 day unbonding period.</p>
+<h3 id="energy-rental-justlend-energy-rental">Energy Rental (justlend-energy-rental)<a class="headerlink" href="#energy-rental-justlend-energy-rental" title="Permanent link">&para;</a></h3>
+<p>Rent TRON Energy from the JustLend marketplace at 50-80% lower cost than burning TRX for transaction fees.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This skill requires the <a href="../mcp_server/">full MCP server</a> for tool execution.</p>
+</div>
+<h3 id="dao-governance-justlend-governance-v1">DAO Governance (justlend-governance-v1)<a class="headerlink" href="#dao-governance-justlend-governance-v1" title="Permanent link">&para;</a></h3>
+<p>Participate in JustLend DAO governance proposals. Deposit JST for voting power (1 JST = 1 Vote), cast votes, and reclaim votes after proposals end.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This skill requires the <a href="../mcp_server/">full MCP server</a> for tool execution.</p>
+</div>
+<p><strong>Voting Workflow:</strong></p>
+<ol>
+<li><code>get_proposal_list</code> — find active proposals</li>
+<li><code>get_vote_info</code> — check available voting power</li>
+<li>If no votes: <code>approve_jst_for_voting</code> → <code>deposit_jst_for_votes</code></li>
+<li><code>cast_vote</code> — vote FOR or AGAINST</li>
+<li>After proposal ends: <code>withdraw_votes_from_proposal</code> → <code>withdraw_votes_to_jst</code></li>
+</ol>
+<h2 id="mcp-tools-reference">MCP Tools Reference<a class="headerlink" href="#mcp-tools-reference" title="Permanent link">&para;</a></h2>
+<h3 id="tools-9-total-all-read-only">Tools (9 total, all read-only)<a class="headerlink" href="#tools-9-total-all-read-only" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Inputs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>get_all_markets</code></td>
+<td>—</td>
+<td>All markets with supply/borrow APY, mining rewards, and TVL</td>
+</tr>
+<tr>
+<td><code>get_dashboard</code></td>
+<td>—</td>
+<td>Protocol overview: total supply, borrow, TVL, user count</td>
+</tr>
+<tr>
+<td><code>get_supported_markets</code></td>
+<td>—</td>
+<td>List all supported markets with jToken/underlying addresses</td>
+</tr>
+<tr>
+<td><code>get_jtoken_details</code></td>
+<td><code>jtokenAddr</code></td>
+<td>Detailed jToken info: interest rate model, reserves, mining rewards</td>
+</tr>
+<tr>
+<td><code>get_account_summary</code></td>
+<td><code>address</code></td>
+<td>Health factor, liquidity, liquidation risk</td>
+</tr>
+<tr>
+<td><code>get_account_data_from_api</code></td>
+<td><code>address</code></td>
+<td>Comprehensive account data from API (positions, rewards)</td>
+</tr>
+<tr>
+<td><code>get_trx_balance</code></td>
+<td><code>address</code></td>
+<td>Native TRX balance</td>
+</tr>
+<tr>
+<td><code>get_token_balance</code></td>
+<td><code>address</code>, <code>token</code></td>
+<td>TRC20 token balance (USDT, USDD, etc.)</td>
+</tr>
+<tr>
+<td><code>check_allowance</code></td>
+<td><code>address</code>, <code>asset</code></td>
+<td>Check TRC20 approval status for JustLend contracts</td>
+</tr>
+</tbody>
+</table>
+<h2 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Read-Only</strong>: All tools use read-only contract calls (<code>triggerConstantContract</code>) or HTTP API queries. No transaction signing or state modifications.</li>
+<li><strong>API Key Only</strong>: Only requires a TronGrid API key for blockchain read access. No wallet or private key needed.</li>
+<li><strong>Test First</strong>: Use Nile testnet (<code>NETWORK=nile</code>) to verify queries before mainnet.</li>
+</ul>
+<h2 id="example-conversations">Example Conversations<a class="headerlink" href="#example-conversations" title="Permanent link">&para;</a></h2>
+<p><strong>"What are the best supply rates on JustLend?"</strong>
+→ AI calls <code>get_all_markets</code>, sorts by supply APY (includes mining rewards), presents ranking</p>
+<p><strong>"Show me the JustLend protocol stats"</strong>
+→ AI calls <code>get_dashboard</code>, displays total TVL, supply/borrow volume, user count</p>
+<p><strong>"Check if my position is safe"</strong>
+→ AI calls <code>get_account_summary</code>, analyzes health factor, warns if <code>shortfallUSD &gt; 0</code></p>
+<p><strong>"Check my full position with mining rewards"</strong>
+→ AI calls <code>get_account_data_from_api</code> for comprehensive position details including rewards</p>
+<p><strong>"What is the TRX balance of address TXxx...?"</strong>
+→ AI calls <code>get_trx_balance</code>, returns balance</p>
+<p><strong>"How much USDT do I have?"</strong>
+→ AI calls <code>get_token_balance</code> with token=USDT, returns balance</p>
+<p><strong>"Show me detailed info for the jUSDT market"</strong>
+→ AI calls <code>get_jtoken_details</code>, returns interest rate model, reserves, utilization, mining rewards</p>
+<p><strong>"What markets have mining rewards?"</strong>
+→ AI calls <code>get_all_markets</code>, filters by miningAPY &gt; 0, presents markets with active rewards</p>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<h3 id="trongrid-api-errors">TronGrid API Errors<a class="headerlink" href="#trongrid-api-errors" title="Permanent link">&para;</a></h3>
+<p>Verify your <code>TRONGRID_API_KEY</code> is valid and not rate-limited. Get a key from <a href="https://www.trongrid.io/">trongrid.io</a>.</p>
+<h3 id="invalid-address">Invalid Address<a class="headerlink" href="#invalid-address" title="Permanent link">&para;</a></h3>
+<p>Ensure the address is a valid TRON base58 address (starts with <code>T</code>, 34 characters).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+		  <hr class="content-footer-divider">  <!-- 添加的水平线 -->
+      	    	  <footer class="md-footer">
+  
+  <!--div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div-->
+</footer>
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "toc.integrate", "search.highlight", "search.suggest", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
